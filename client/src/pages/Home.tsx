@@ -73,15 +73,14 @@ function Hero() {
 
 // --- Gallery Section ---
 function Gallery() {
+  // INSTRUCCIONES: Sube tus fotos a la carpeta client/public/images/
+  // Nombra los archivos: foto1.jpg, foto2.jpg, foto3.jpg, foto4.jpg
+  // Puedes añadir más fotos añadiendo más rutas al array
   const images = [
-    // couple holding hands sunset
-    "https://images.unsplash.com/photo-1511285560982-1351cdeb9821?w=800&q=80",
-    // wedding rings detail
-    "https://images.unsplash.com/photo-1522673607200-1645062cd958?w=800&q=80",
-    // couple laughing together
-    "https://images.unsplash.com/photo-1623769992683-1678a1df180a?w=800&q=80",
-    // holding bouquet flowers
-    "https://images.unsplash.com/photo-1520854221256-17451cc330e7?w=800&q=80"
+    "/images/foto1.jpg",
+    "/images/foto2.jpg",
+    "/images/foto3.jpg",
+    "/images/foto4.jpg"
   ];
 
   return (
