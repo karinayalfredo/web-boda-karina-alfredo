@@ -72,14 +72,14 @@ function Hero() {
 
 // --- Gallery Section ---
 function Gallery() {
-  // INSTRUCCIONES: Sube tus fotos a la carpeta client/public/images/
+  // INSTRUCCIONES: Sube tus fotos a la carpeta client/public/
   // Nombra los archivos: foto1.jpg, foto2.jpg, foto3.jpg, foto4.jpg
   // Puedes añadir más fotos añadiendo más rutas al array
   const images = [
-    "/images/foto1.jpg",
-    "/images/foto2.jpg",
-    "/images/foto3.jpg",
-    "/images/foto4.jpg"
+    "/foto1.jpg",
+    "/foto2.jpg",
+    "/foto3.jpg",
+    "/foto4.jpg"
   ];
 
   return (
