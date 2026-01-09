@@ -1,0 +1,13 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="refresh" content="0; url=./index.html" />
+    <script>
+      // SPA fallback: redirige cualquier ruta a index.html preservando query/hash
+      const base = location.pathname.split('/')[1];
+      location.replace('/' + base + '/index.html' + location.search + location.hash);
+    </script>
+  </head>
+  <body></body>
+</html>
