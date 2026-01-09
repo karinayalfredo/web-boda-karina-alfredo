@@ -1,0 +1,90 @@
+Construye una web estática de boda para “Karina & Alfredo”, prácticamente igual a la web anterior de boda que hicimos, con diseño minimalista, elegante y muy visual, responsive para móvil, scroll suave y navegación sticky superior.
+
+CONTENIDO REAL (inclúyelo tal cual en las secciones)
+- Portada (Hero):
+  - Título: “Karina & Alfredo”
+  - Subtítulo: “Nos casamos”
+  - Fecha: “Sábado, 4 de julio de 2026”
+  - Texto: “Nos casamos y queremos compartir contigo este día tan especial”
+  - Botón principal: “Confirmar asistencia” → al hacer clic, debe redirigir exactamente a:
+    https://docs.google.com/forms/d/e/1FAIpQLSdrtt5IquE3lLWvkbFCIOSpX6H0RXrI__3d5SR8TU1rRv_gHA/viewform?usp=publish-editor
+  - Botón secundario: “Ver detalles” (scroll a la sección de detalles)
+  - Diseño con mucho aire, centrado, sin cuadrados negros, con tipografía bonita (system fonts con fallback).
+
+- Galería de fotos de los novios (nueva sección):
+  - Debe llamarse “Nuestros mejores momentos”
+  - Incluye un grid adaptable:
+      * 2 columnas en desktop
+      * 1 columna en móvil
+  - Las imágenes deben cargarse desde archivos locales del proyecto, sin depender de URLs externas obligatorias.
+  - Usa placeholders de imagen en el código para que yo pueda reemplazarlos fácilmente al subir las fotos reales.
+  - Añade efecto hover sutil (zoom suave con transform: scale, sin librerías externas).
+  - Las fotos deben mostrarse con bordes redondeados y sombra suave.
+
+- Detalles del evento:
+  - Ceremonia: “Monasterio de El Paular” · 17:30
+  - Celebración/Banquete: “Finca El Robledo (Rascafría)” · 19:00
+  - Incluye botones “Abrir en Google Maps” por cada ubicación (enlace placeholder de búsqueda Maps con el nombre del sitio).
+
+- Agenda / Horario:
+  - Ceremonia (17:30)
+  - Traslado (aprox.)
+  - Cóctel (19:00 aprox.)
+  - Banquete
+  - Fiesta
+  - Mismo tipo de tarjetas que la web anterior, en vertical en móvil, grid en desktop.
+
+- Cómo llegar:
+  - Dirección textual del Monasterio y de la Finca (usa placeholders si no se dispone de dirección exacta).
+  - Nota de parking/transporte (placeholder si hace falta).
+  - No embebas mapas con iframes; solo botones de enlace.
+
+- Alojamiento (Hoteles/Apartamentos recomendados, listar 7 opciones sin inventar datos extra):
+  1) Alojamientos rurales Valle El Paular
+  2) Hotel rural Los Manzanos
+  3) Apartamentos rurales La Cabaña
+  4) Posada El Campanario
+  5) Caserón de Trastamara
+  6) Hotel El Rincón de Rascafría
+  7) Hotel Casa Marcos
+
+- Qué hacer por la zona:
+  - Restaurante El Caldea
+  - Bosque finlandés
+  - Piscinas naturales Las Presillas
+
+- Regalo:
+  - Texto: “Tu presencia es el mejor regalo, pero si quieres ayudarnos…”
+  - IBAN: “ES30 0182 9051 6702 0184 7010”
+  - Nota visible: “En el concepto: Nombre del que hace el regalo”
+  - Incluye un botón “Copiar IBAN” en JS (copy-to-clipboard) sin recargar.
+
+- Contacto:
+  - Karina: 618650438
+  - Alfredo: 667397146
+  - Incluye enlaces tel: y botones para copiar teléfono.
+
+- FAQ (acordeón en JS, 6 preguntas, respuestas cortas, sin inventar datos):
+  - ¿Hasta cuándo puedo confirmar?
+  - ¿Puedo llevar acompañante?
+  - ¿Hay opciones vegetarianas/alergias?
+  - ¿Cómo funciona el transporte?
+  - ¿Qué pasa si llego tarde?
+  - ¿A quién contacto si tengo dudas?
+
+REQUISITOS TÉCNICOS
+- Proyecto 100% estático: usa solo index.html, styles.css y app.js.
+- No uses backend, ni guardes RSVPs, ni bases de datos.
+- Navegación superior sticky con anchors a secciones.
+- Scroll suave y animaciones sutiles de aparición al hacer scroll (sin librerías externas obligatorias).
+- Botones con hover y focus accesibles.
+- Layout grid limpio en desktop y vertical en móvil.
+- Footer con texto: “Karina & Alfredo · 2026”
+- Debe abrir y funcionar correctamente al presionar “Run” en Replit.
+
+ENTREGABLE
+Devuélveme el código completo y de alta calidad de:
+- index.html
+- styles.css
+- app.js
+Incluye comentarios mínimos en el código para que pueda reemplazar fácilmente los placeholders de las fotos de los novios.
