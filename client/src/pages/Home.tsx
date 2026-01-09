@@ -54,7 +54,7 @@ function Hero() {
           <Button
             size="lg"
             variant="outline"
-            className="text-lg px-8 py-6 rounded-full border-white text-white hover:bg-white/10 hover:text-white font-medium min-w-[200px] backdrop-blur-sm"
+            className="text-lg px-8 py-6 rounded-full border-white text-white hover:bg-white/10 hover:text-white font-medium min-w-[200px] backdrop-blur-sm mb-6"
             onClick={() => scrollToId('details')}
           >
             Ver detalles
