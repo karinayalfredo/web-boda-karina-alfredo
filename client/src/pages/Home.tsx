@@ -18,20 +18,21 @@ import { useToast } from "@/hooks/use-toast";
 function Hero() {
   const { scrollToId } = useScrollTo();
 
+  // INSTRUCCIONES: Sube tu foto de portada a client/public/images/portada.jpg
   return (
     <section id="hero" className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
         <div className="absolute inset-0 bg-black/40 z-10" />
-        {/* romantic couple walking in nature landscape */}
         <img
-          src="https://images.unsplash.com/photo-1515934751635-c81c6bc9a2d8?q=80&w=2070&auto=format&fit=crop"
+          src="/images/portada.jpg"
           alt="Karina y Alfredo"
           className="w-full h-full object-cover"
         />
       </div>
 
       <div className="relative z-20 text-center text-white px-4 max-w-4xl mx-auto space-y-8 animate-in fade-in zoom-in duration-1000">
+        <p className="text-lg md:text-xl uppercase tracking-[0.3em] font-light mb-4">Nos casamos</p>
         <h1 className="font-serif text-6xl md:text-8xl lg:text-9xl mb-6 leading-tight">
           Karina <span className="text-primary-foreground/80">&</span> Alfredo
         </h1>
