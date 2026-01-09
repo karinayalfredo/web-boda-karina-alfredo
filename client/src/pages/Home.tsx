@@ -32,7 +32,6 @@ function Hero() {
       </div>
 
       <div className="relative z-20 text-center text-white px-4 max-w-4xl mx-auto space-y-8 animate-in fade-in zoom-in duration-1000">
-        <p className="text-lg md:text-xl uppercase tracking-[0.3em] font-light mb-4">Nos casamos</p>
         <h1 className="font-serif text-6xl md:text-8xl lg:text-9xl mb-6 leading-tight">
           Karina <span className="text-primary-foreground/80">&</span> Alfredo
         </h1>
