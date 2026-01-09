@@ -1,37 +1,24 @@
-import { type User, type InsertUser } from "@shared/schema";
-import { randomUUID } from "crypto";
-
-// modify the interface with any CRUD methods
-// you might need
+import { subscribers, type Subscriber, type InsertSubscriber } from "@shared/schema";
 
 export interface IStorage {
-  getUser(id: string): Promise<User | undefined>;
-  getUserByUsername(username: string): Promise<User | undefined>;
-  createUser(user: InsertUser): Promise<User>;
+  // Minimal interface
+  createSubscriber(subscriber: InsertSubscriber): Promise<Subscriber>;
 }
 
 export class MemStorage implements IStorage {
-  private users: Map<string, User>;
+  private subscribers: Map<number, Subscriber>;
+  private currentId: number;
 
   constructor() {
-    this.users = new Map();
+    this.subscribers = new Map();
+    this.currentId = 1;
   }
 
-  async getUser(id: string): Promise<User | undefined> {
-    return this.users.get(id);
-  }
-
-  async getUserByUsername(username: string): Promise<User | undefined> {
-    return Array.from(this.users.values()).find(
-      (user) => user.username === username,
-    );
-  }
-
-  async createUser(insertUser: InsertUser): Promise<User> {
-    const id = randomUUID();
-    const user: User = { ...insertUser, id };
-    this.users.set(id, user);
-    return user;
+  async createSubscriber(insertSubscriber: InsertSubscriber): Promise<Subscriber> {
+    const id = this.currentId++;
+    const subscriber: Subscriber = { ...insertSubscriber, id };
+    this.subscribers.set(id, subscriber);
+    return subscriber;
   }
 }
 
