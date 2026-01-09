@@ -19,7 +19,7 @@ function Hero() {
   const { scrollToId } = useScrollTo();
 
   return (
-    <section id="hero" className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section id="hero" className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
         <div className="absolute inset-0 bg-black/40 z-10" />
@@ -37,7 +37,6 @@ function Hero() {
           Karina <span className="text-primary-foreground/80">&</span> Alfredo
         </h1>
         <div className="flex flex-col items-center gap-4">
-          <div className="w-px h-16 bg-white/50 mb-4" />
           <p className="font-serif text-2xl md:text-3xl italic">Sábado, 4 de julio de 2026</p>
           <p className="text-white/90 max-w-lg mx-auto text-lg leading-relaxed mt-4">
             Nos casamos y queremos compartir contigo este día tan especial y lleno de amor.
