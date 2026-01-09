@@ -362,7 +362,6 @@ function Gift() {
 function FaqAndContact() {
   const faqs = [
     { q: "¿Hasta cuándo puedo confirmar?", a: "Por favor, confirma tu asistencia antes del 4 de mayo de 2026 para que podamos organizar todo perfectamente." },
-    { q: "¿Puedo llevar acompañante?", a: "En la invitación hemos especificado el número de plazas reservadas para ti. Si tienes dudas, consúltanos." },
     { q: "¿Hay opciones vegetarianas o para alergias?", a: "¡Sí! En el formulario de confirmación encontrarás un apartado para indicarnos cualquier alergia o preferencia alimentaria." },
     { q: "¿Cómo funciona el transporte?", a: "Habrá autobuses desde el Monasterio hasta la Finca, y de vuelta al final de la fiesta." },
     { q: "¿Qué pasa si llego tarde?", a: "Te recomendamos llegar 15 minutos antes de la ceremonia. Si llegas tarde, por favor espera discretamente en la entrada hasta que el personal te indique." },
