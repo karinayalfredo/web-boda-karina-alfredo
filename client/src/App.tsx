@@ -16,11 +16,12 @@ function Routes() {
 }
 
 function App() {
+  const base = import.meta.env.BASE_URL.replace(/\/$/, "");
+
   return (
     <QueryClientProvider client={queryClient}>
       <TooltipProvider>
-        {/* GitHub Pages: el site vive bajo /web-boda-karina-alfredo */}
-        <WouterRouter base="/web-boda-karina-alfredo">
+        <WouterRouter base={base}>
           <Routes />
         </WouterRouter>
 
