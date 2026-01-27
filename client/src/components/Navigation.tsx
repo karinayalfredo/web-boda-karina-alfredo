@@ -49,10 +49,13 @@ export function Navigation() {
             <div className="p-2 rounded-full bg-primary/10 text-primary group-hover:bg-primary group-hover:text-primary-foreground transition-colors">
               <Heart className="w-5 h-5 fill-current" />
             </div>
-            <span className={cn(
-              "font-serif text-2xl font-bold tracking-tight transition-colors",
-              isScrolled ? "text-foreground" : "text-foreground md:text-white md:shadow-sm" // White on hero only on desktop
-            )}>
+            <span 
+              className={cn(
+                "font-serif text-2xl font-bold tracking-tight transition-colors",
+                isScrolled ? "text-foreground" : "text-foreground md:text-white md:shadow-sm" // White on hero only on desktop
+              )}
+              style={{ textShadow: "0 2px 6px rgba(0,0,0,0.45)" }}
+            >
               K<span className="text-primary">&</span>A
             </span>
           </div>
