@@ -27,7 +27,7 @@ function Hero() {
         <img
           src="/portada.jpg"
           alt="Karina y Alfredo"
-          className="w-full h-full object-cover"
+          className="w-full h-full object-cover filter blur-[2px] brightness-75 scale-105"
         />
       </div>
 
@@ -62,10 +62,6 @@ function Hero() {
         </div>
       </div>
       
-      {/* Scroll indicator */}
-      <div className="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce z-20 text-white/70">
-        <ArrowRight className="h-6 w-6 rotate-90" />
-      </div>
     </section>
   );
 }
