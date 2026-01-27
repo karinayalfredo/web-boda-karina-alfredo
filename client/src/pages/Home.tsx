@@ -25,7 +25,7 @@ function Hero() {
         <div className="absolute inset-0 bg-black/40 z-10" />
         {/* romantic couple walking in nature landscape */}
         <img
-          src="https://images.unsplash.com/photo-1515934751635-c81c6bc9a2d8?q=80&w=2070&auto=format&fit=crop"
+          src="/portada.jpg"
           alt="Karina y Alfredo"
           className="w-full h-full object-cover"
         />
@@ -139,7 +139,7 @@ function Details() {
             </p>
           </div>
           <div className="pt-4 border-t border-border">
-            <p className="font-medium text-lg text-foreground mb-1">Monasterio de El Paular</p>
+            <p className="font-medium text-lg text-foreground mb-1">Real Monasterio de Santa María de El Paular</p>
             <p className="text-muted-foreground mb-6">Rascafría, Madrid</p>
             <Button 
               variant="outline" 
@@ -191,7 +191,7 @@ function Details() {
 // --- Agenda Section ---
 function Agenda() {
   const events = [
-    { time: "17:30", title: "Ceremonia", description: "Monasterio de El Paular" },
+    { time: "17:30", title: "Ceremonia", description: "Real Monasterio de Santa María de El Paular" },
     { time: "~18:30", title: "Traslado", description: "Hacia la finca" },
     { time: "19:00", title: "Cóctel de Bienvenida", description: "Jardines de El Robledo" },
     { time: "20:30", title: "Banquete", description: "Cena y brindis" },
@@ -363,7 +363,7 @@ function FaqAndContact() {
   const faqs = [
     { q: "¿Hasta cuándo puedo confirmar?", a: "Por favor, confirma tu asistencia antes del 4 de mayo de 2026 para que podamos organizar todo perfectamente." },
     { q: "¿Hay opciones vegetarianas o para alergias?", a: "¡Sí! En el formulario de confirmación encontrarás un apartado para indicarnos cualquier alergia o preferencia alimentaria." },
-    { q: "¿Cómo funciona el transporte?", a: "Habrá autobuses desde el Monasterio hasta la Finca, y de vuelta al final de la fiesta." },
+    { q: "¿Cómo funciona el transporte?", a: "Estamos organizando transporte desde Madrid hasta el Monasterio y la Finca. Habrá un autobús de vuelta a Madrid al cierre de la finca. Más adelante compartiremos horarios y puntos de recogida." },
     { q: "¿Qué pasa si llego tarde?", a: "Te recomendamos llegar 15 minutos antes de la ceremonia. Si llegas tarde, por favor espera discretamente en la entrada hasta que el personal te indique." },
     { q: "¿A quién contacto si tengo más dudas?", a: "Puedes escribirnos por WhatsApp o llamarnos a los números que encontrarás más abajo." }
   ];
