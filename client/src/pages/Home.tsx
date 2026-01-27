@@ -27,7 +27,7 @@ function Hero() {
         <img
           src="/portada.jpg"
           alt="Karina y Alfredo"
-          className="w-full h-full object-cover filter blur-[2px] brightness-75 scale-105"
+          className="w-full h-full object-cover filter blur-[1.5px] brightness-90 contrast-105 scale-105"
         />
       </div>
 
