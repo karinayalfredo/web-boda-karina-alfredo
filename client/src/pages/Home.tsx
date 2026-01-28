@@ -359,7 +359,7 @@ function Gift() {
         </p>
 
         <Card className="bg-white/10 backdrop-blur-md border-white/20 text-white overflow-hidden">
-          <CardContent className="p-8 space-y-6">
+          <CardContent className="p-8 space-y-6 flex flex-col items-center">
             <div className="space-y-2 text-center">
               <p className="text-sm uppercase tracking-widest opacity-70">Número de cuenta</p>
               <p className="font-mono text-lg md:text-3xl font-medium tracking-wide whitespace-nowrap">
