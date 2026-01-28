@@ -26,11 +26,11 @@ function Hero() {
     >
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
-        <div className="absolute inset-0 bg-black/40 z-10" />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/40 to-black/60 z-10" />
         <img
           src={portadaSrc}
           alt="Karina y Alfredo"
-          className="w-full h-full object-cover filter blur-[1.5px] brightness-90 contrast-105 scale-105"
+          className="w-full h-full object-cover scale-105"
         />
       </div>
 
@@ -362,7 +362,7 @@ function Gift() {
           <CardContent className="p-8 space-y-6">
             <div className="space-y-2">
               <p className="text-sm uppercase tracking-widest opacity-70">Número de cuenta</p>
-              <p className="font-mono text-xl md:text-3xl font-medium tracking-wide break-all md:break-normal">
+              <p className="font-mono text-lg md:text-3xl font-medium tracking-wide whitespace-nowrap">
                 {iban}
               </p>
             </div>
